@@ -1,0 +1,77 @@
+{
+  "api": "application",
+  "modelName": "AccessControlPolicyGroupAccessControlPolicy",
+  "payload": [
+    {
+      "id": "clzsppi5r0nft0875avfz7xtg",
+      "accessControlPolicyGroupId": "clzsp9oa70n4d08756xp52gv1",
+      "accessControlPolicyId": "clzspg3ts0n8y08753gwohgpi"
+    },
+    {
+      "id": "clzspplku0nfv0875etofgawn",
+      "accessControlPolicyGroupId": "clzsp9oa70n4d08756xp52gv1",
+      "accessControlPolicyId": "clzsplw2p0ncy0875a1271sms"
+    },
+    {
+      "id": "clzsppprw0nfx087547jo2zoe",
+      "accessControlPolicyGroupId": "clzsp9oa70n4d08756xp52gv1",
+      "accessControlPolicyId": "clzspkj8x0nc00875gyiof29j"
+    },
+    {
+      "id": "clzspq7mz0ngj0875ajrsc6a8",
+      "accessControlPolicyGroupId": "clzsp9twy0n4u08754cpp282z",
+      "accessControlPolicyId": "clzspmaqg0ndh0875fue78qor"
+    },
+    {
+      "id": "clzspq9cx0ngl0875ag9352ix",
+      "accessControlPolicyGroupId": "clzsp9twy0n4u08754cpp282z",
+      "accessControlPolicyId": "clzsplw2p0ncy0875a1271sms"
+    },
+    {
+      "id": "clzspqg4j0ngn0875el7y8oml",
+      "accessControlPolicyGroupId": "clzsp9twy0n4u08754cpp282z",
+      "accessControlPolicyId": "clzspkj8x0nc00875gyiof29j"
+    },
+    {
+      "id": "clzspqvdq0nh6087523lxfwgp",
+      "accessControlPolicyGroupId": "clzspoh140nev08759fqsduld",
+      "accessControlPolicyId": "clzspmaqg0ndh0875fue78qor"
+    },
+    {
+      "id": "clzspqx660nh80875dz6u83uo",
+      "accessControlPolicyGroupId": "clzspoh140nev08759fqsduld",
+      "accessControlPolicyId": "clzsplw2p0ncy0875a1271sms"
+    },
+    {
+      "id": "clzspqzhr0nha0875hl9x7myf",
+      "accessControlPolicyGroupId": "clzspoh140nev08759fqsduld",
+      "accessControlPolicyId": "clzspkj8x0nc00875gyiof29j"
+    },
+    {
+      "id": "clzspr2kb0nhc0875fnd46f6h",
+      "accessControlPolicyGroupId": "clzspoh140nev08759fqsduld",
+      "accessControlPolicyId": "clzspf73p0n8g0875gwjd5hb7"
+    },
+    {
+      "id": "clzsprh8x0nhu0875d9s1hruu",
+      "accessControlPolicyGroupId": "clzsp9twy0n4u08754cpp282z",
+      "accessControlPolicyId": "clzspefjr0n7v08759u206pqb"
+    },
+    {
+      "id": "clzsprmnw0nhw0875fm8ee1sk",
+      "accessControlPolicyGroupId": "clzsp9oa70n4d08756xp52gv1",
+      "accessControlPolicyId": "clzspefjr0n7v08759u206pqb"
+    },
+    {
+      "id": "clzsps2ok0nig0875h0hqeool",
+      "accessControlPolicyGroupId": "clzsprxj90nie0875dtur9m33",
+      "accessControlPolicyId": "clzsplw2p0ncy0875a1271sms"
+    },
+    {
+      "id": "clzsps68n0nii087559t6e804",
+      "accessControlPolicyGroupId": "clzsprxj90nie0875dtur9m33",
+      "accessControlPolicyId": "clzspew7r0n7y08754nzg631z"
+    }
+  ],
+  "metadata": {}
+}

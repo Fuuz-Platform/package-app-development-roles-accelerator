@@ -1,0 +1,27 @@
+{
+  "api": "application",
+  "modelName": "AccessControlPolicyGroup",
+  "payload": [
+    {
+      "id": "clzsp9oa70n4d08756xp52gv1",
+      "name": "App Development",
+      "description": ""
+    },
+    {
+      "id": "clzsp9twy0n4u08754cpp282z",
+      "name": "App Deployment",
+      "description": ""
+    },
+    {
+      "id": "clzspoh140nev08759fqsduld",
+      "name": "Soft Administrator",
+      "description": ""
+    },
+    {
+      "id": "clzsprxj90nie0875dtur9m33",
+      "name": "Read-only Access",
+      "description": ""
+    }
+  ],
+  "metadata": {}
+}

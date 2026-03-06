@@ -1,0 +1,271 @@
+{
+  "packageDefinition": {
+    "name": "App Development Roles"
+  },
+  "packageDefinitionVersion": {
+    "id": "clzspwfb000mn356hlv2zd5x2",
+    "version": "0.0.1"
+  },
+  "packageDefinitionSelections": [
+    {
+      "id": "clzspwfja00mo356h8rnqti5p",
+      "api": "application",
+      "modelName": "AccessControlPolicy",
+      "selected": [
+        {
+          "id": "clzsplw2p0ncy0875a1271sms",
+          "label": "Access All Screens"
+        },
+        {
+          "id": "clzspf73p0n8g0875gwjd5hb7",
+          "label": "Application API Full Access"
+        },
+        {
+          "id": "clzspefjr0n7v08759u206pqb",
+          "label": "Application API Limited Access"
+        },
+        {
+          "id": "clzspew7r0n7y08754nzg631z",
+          "label": "Application API Read Only Access"
+        },
+        {
+          "id": "clzspmaqg0ndh0875fue78qor",
+          "label": "Execute All Connectors"
+        },
+        {
+          "id": "clzspkj8x0nc00875gyiof29j",
+          "label": "Execute All Flows"
+        },
+        {
+          "id": "clzspg3ts0n8y08753gwohgpi",
+          "label": "No Deployments"
+        }
+      ],
+      "fields": [
+        {
+          "name": "id"
+        },
+        {
+          "name": "name"
+        },
+        {
+          "name": "policy"
+        },
+        {
+          "name": "description"
+        }
+      ],
+      "metadata": {
+        "dataTransform": "$",
+        "labelField": [
+          {
+            "name": "name"
+          }
+        ]
+      },
+      "packageDefinitionVersionId": "clzspwfb000mn356hlv2zd5x2"
+    },
+    {
+      "id": "clzspwfja00mp356h81fd2yw4",
+      "api": "application",
+      "modelName": "AccessControlPolicyGroup",
+      "selected": [
+        {
+          "id": "clzsp9twy0n4u08754cpp282z",
+          "label": "App Deployment"
+        },
+        {
+          "id": "clzsp9oa70n4d08756xp52gv1",
+          "label": "App Development"
+        },
+        {
+          "id": "clzsprxj90nie0875dtur9m33",
+          "label": "Read-only Access"
+        },
+        {
+          "id": "clzspoh140nev08759fqsduld",
+          "label": "Soft Administrator"
+        }
+      ],
+      "fields": [
+        {
+          "name": "id"
+        },
+        {
+          "name": "name"
+        },
+        {
+          "name": "description"
+        }
+      ],
+      "metadata": {
+        "dataTransform": "$",
+        "labelField": [
+          {
+            "name": "name"
+          }
+        ]
+      },
+      "packageDefinitionVersionId": "clzspwfb000mn356hlv2zd5x2"
+    },
+    {
+      "id": "clzspwfja00mq356hg3ya1gmo",
+      "api": "application",
+      "modelName": "AccessControlPolicyGroupAccessControlPolicy",
+      "selected": [
+        {
+          "id": "clzsppi5r0nft0875avfz7xtg",
+          "label": "clzsppi5r0nft0875avfz7xtg"
+        },
+        {
+          "id": "clzspplku0nfv0875etofgawn",
+          "label": "clzspplku0nfv0875etofgawn"
+        },
+        {
+          "id": "clzsppprw0nfx087547jo2zoe",
+          "label": "clzsppprw0nfx087547jo2zoe"
+        },
+        {
+          "id": "clzspq7mz0ngj0875ajrsc6a8",
+          "label": "clzspq7mz0ngj0875ajrsc6a8"
+        },
+        {
+          "id": "clzspq9cx0ngl0875ag9352ix",
+          "label": "clzspq9cx0ngl0875ag9352ix"
+        },
+        {
+          "id": "clzspqg4j0ngn0875el7y8oml",
+          "label": "clzspqg4j0ngn0875el7y8oml"
+        },
+        {
+          "id": "clzspqvdq0nh6087523lxfwgp",
+          "label": "clzspqvdq0nh6087523lxfwgp"
+        },
+        {
+          "id": "clzspqx660nh80875dz6u83uo",
+          "label": "clzspqx660nh80875dz6u83uo"
+        },
+        {
+          "id": "clzspqzhr0nha0875hl9x7myf",
+          "label": "clzspqzhr0nha0875hl9x7myf"
+        },
+        {
+          "id": "clzspr2kb0nhc0875fnd46f6h",
+          "label": "clzspr2kb0nhc0875fnd46f6h"
+        },
+        {
+          "id": "clzsprh8x0nhu0875d9s1hruu",
+          "label": "clzsprh8x0nhu0875d9s1hruu"
+        },
+        {
+          "id": "clzsprmnw0nhw0875fm8ee1sk",
+          "label": "clzsprmnw0nhw0875fm8ee1sk"
+        },
+        {
+          "id": "clzsps2ok0nig0875h0hqeool",
+          "label": "clzsps2ok0nig0875h0hqeool"
+        },
+        {
+          "id": "clzsps68n0nii087559t6e804",
+          "label": "clzsps68n0nii087559t6e804"
+        }
+      ],
+      "fields": [
+        {
+          "name": "id"
+        },
+        {
+          "name": "accessControlPolicyGroupId"
+        },
+        {
+          "name": "accessControlPolicyId"
+        }
+      ],
+      "metadata": {
+        "dataTransform": "$",
+        "labelField": [
+          {
+            "name": "id"
+          }
+        ]
+      },
+      "packageDefinitionVersionId": "clzspwfb000mn356hlv2zd5x2"
+    },
+    {
+      "id": "clzspwfja00mr356hkgnjgfmq",
+      "api": "application",
+      "modelName": "Role",
+      "selected": [
+        {
+          "id": "applicationAdministrator",
+          "label": "Application Administrator"
+        },
+        {
+          "id": "applicationDevelopment",
+          "label": "Application Development"
+        }
+      ],
+      "fields": [
+        {
+          "name": "id"
+        },
+        {
+          "name": "name"
+        },
+        {
+          "name": "description"
+        },
+        {
+          "name": "menu"
+        },
+        {
+          "name": "homeScreenId"
+        }
+      ],
+      "metadata": {
+        "dataTransform": "$",
+        "labelField": [
+          {
+            "name": "name"
+          }
+        ]
+      },
+      "packageDefinitionVersionId": "clzspwfb000mn356hlv2zd5x2"
+    },
+    {
+      "id": "clzspwfja00ms356h04r33q17",
+      "api": "application",
+      "modelName": "RoleAccessControlPolicyGroup",
+      "selected": [
+        {
+          "id": "clzsptzau0nk00875a711854z",
+          "label": "clzsptzau0nk00875a711854z"
+        },
+        {
+          "id": "clzspuz070nkk0875dhjtavmt",
+          "label": "clzspuz070nkk0875dhjtavmt"
+        }
+      ],
+      "fields": [
+        {
+          "name": "id"
+        },
+        {
+          "name": "accessControlPolicyGroupId"
+        },
+        {
+          "name": "roleId"
+        }
+      ],
+      "metadata": {
+        "dataTransform": "$",
+        "labelField": [
+          {
+            "name": "id"
+          }
+        ]
+      },
+      "packageDefinitionVersionId": "clzspwfb000mn356hlv2zd5x2"
+    }
+  ]
+}

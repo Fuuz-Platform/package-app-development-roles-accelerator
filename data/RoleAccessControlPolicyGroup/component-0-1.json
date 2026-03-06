@@ -1,0 +1,17 @@
+{
+  "api": "application",
+  "modelName": "RoleAccessControlPolicyGroup",
+  "payload": [
+    {
+      "id": "clzsptzau0nk00875a711854z",
+      "accessControlPolicyGroupId": "clzsp9twy0n4u08754cpp282z",
+      "roleId": "applicationDevelopment"
+    },
+    {
+      "id": "clzspuz070nkk0875dhjtavmt",
+      "accessControlPolicyGroupId": "clzspoh140nev08759fqsduld",
+      "roleId": "applicationAdministrator"
+    }
+  ],
+  "metadata": {}
+}

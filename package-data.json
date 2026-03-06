@@ -1,0 +1,390 @@
+{
+  "dataModels": [],
+  "dataFlows": [],
+  "screens": [],
+  "savedTransforms": [],
+  "data": [
+    {
+      "api": "application",
+      "modelName": "AccessControlPolicy",
+      "payload": [
+        {
+          "id": "clzspefjr0n7v08759u206pqb",
+          "name": "Application API Limited Access",
+          "policy": {
+            "statements": [
+              {
+                "effect": "allow",
+                "actions": [
+                  "graphql:update"
+                ],
+                "resources": [
+                  "graphql:system:integration:connection",
+                  "graphql:system:integration:connection:credentials",
+                  "graphql:system:integration:connection:options"
+                ]
+              },
+              {
+                "effect": "allow",
+                "actions": [
+                  "graphql:create",
+                  "graphql:update",
+                  "graphql:delete"
+                ],
+                "resources": [
+                  "graphql:system:orchestration:dataFlow:*",
+                  "graphql:system:orchestration:dataFlowVersion:*",
+                  "graphql:system:orchestration:savedTransform:*"
+                ]
+              }
+            ]
+          },
+          "description": ""
+        },
+        {
+          "id": "clzspew7r0n7y08754nzg631z",
+          "name": "Application API Read Only Access",
+          "policy": {
+            "statements": [
+              {
+                "effect": "allow",
+                "actions": [
+                  "graphql:query"
+                ],
+                "resources": [
+                  "graphql:customerRelationshipManagement:*",
+                  "graphql:humanCapitalManagement:*",
+                  "graphql:materialsManagement:*",
+                  "graphql:productDataManagement:*",
+                  "graphql:productionManagement:*",
+                  "graphql:supplyChainManagement:*",
+                  "graphql:system:accessControl:user:*",
+                  "graphql:system:businessIntelligence:*",
+                  "graphql:system:configuration:*",
+                  "graphql:system:dataModeling:*",
+                  "graphql:system:files:*",
+                  "graphql:system:images:*",
+                  "graphql:system:integration:*",
+                  "graphql:system:internetOfThings:*",
+                  "graphql:system:orchestration:*"
+                ]
+              }
+            ]
+          },
+          "description": ""
+        },
+        {
+          "id": "clzspf73p0n8g0875gwjd5hb7",
+          "name": "Application API Full Access",
+          "policy": {
+            "statements": [
+              {
+                "effect": "allow",
+                "actions": [
+                  "graphql:*"
+                ],
+                "resources": [
+                  "graphql:customerRelationshipManagement:*",
+                  "graphql:humanCapitalManagement:*",
+                  "graphql:materialsManagement:*",
+                  "graphql:productDataManagement:*",
+                  "graphql:productionManagement:*",
+                  "graphql:supplyChainManagement:*",
+                  "graphql:system:businessIntelligence:*",
+                  "graphql:system:configuration:*",
+                  "graphql:system:dataModeling:*",
+                  "graphql:system:files:*",
+                  "graphql:system:images:*",
+                  "graphql:system:integration:*",
+                  "graphql:system:internetOfThings:*",
+                  "graphql:system:orchestration:*"
+                ]
+              },
+              {
+                "effect": "allow",
+                "actions": [
+                  "graphql:query"
+                ],
+                "resources": [
+                  "graphql:system:accessControl:*"
+                ]
+              }
+            ]
+          },
+          "description": ""
+        },
+        {
+          "id": "clzspg3ts0n8y08753gwohgpi",
+          "name": "No Deployments",
+          "policy": {
+            "statements": [
+              {
+                "effect": "deny",
+                "actions": [
+                  "graphql:mutate"
+                ],
+                "resources": [
+                  "graphql:system:configuration:deployScreenVersion:*",
+                  "graphql:system:dataModeling:deployDataModelVersion:*",
+                  "graphql:system:orchestration:deployDataFlowVersion:*"
+                ],
+                "rules": []
+              }
+            ]
+          },
+          "description": ""
+        },
+        {
+          "id": "clzspkj8x0nc00875gyiof29j",
+          "name": "Execute All Flows",
+          "policy": {
+            "statements": [
+              {
+                "effect": "allow",
+                "actions": [
+                  "orchestration:*"
+                ],
+                "resources": [
+                  "orchestration:*"
+                ]
+              }
+            ]
+          },
+          "description": ""
+        },
+        {
+          "id": "clzsplw2p0ncy0875a1271sms",
+          "name": "Access All Screens",
+          "policy": {
+            "statements": [
+              {
+                "effect": "allow",
+                "actions": [
+                  "screen:*"
+                ],
+                "resources": [
+                  "screen:*"
+                ]
+              }
+            ]
+          },
+          "description": ""
+        },
+        {
+          "id": "clzspmaqg0ndh0875fue78qor",
+          "name": "Execute All Connectors",
+          "policy": {
+            "statements": [
+              {
+                "effect": "allow",
+                "actions": [
+                  "integration:*"
+                ],
+                "resources": [
+                  "integration:*"
+                ]
+              }
+            ]
+          },
+          "description": ""
+        }
+      ],
+      "metadata": {}
+    },
+    {
+      "api": "application",
+      "modelName": "AccessControlPolicyGroup",
+      "payload": [
+        {
+          "id": "clzsp9oa70n4d08756xp52gv1",
+          "name": "App Development",
+          "description": ""
+        },
+        {
+          "id": "clzsp9twy0n4u08754cpp282z",
+          "name": "App Deployment",
+          "description": ""
+        },
+        {
+          "id": "clzspoh140nev08759fqsduld",
+          "name": "Soft Administrator",
+          "description": ""
+        },
+        {
+          "id": "clzsprxj90nie0875dtur9m33",
+          "name": "Read-only Access",
+          "description": ""
+        }
+      ],
+      "metadata": {}
+    },
+    {
+      "api": "application",
+      "modelName": "AccessControlPolicyGroupAccessControlPolicy",
+      "payload": [
+        {
+          "id": "clzsppi5r0nft0875avfz7xtg",
+          "accessControlPolicyGroupId": "clzsp9oa70n4d08756xp52gv1",
+          "accessControlPolicyId": "clzspg3ts0n8y08753gwohgpi"
+        },
+        {
+          "id": "clzspplku0nfv0875etofgawn",
+          "accessControlPolicyGroupId": "clzsp9oa70n4d08756xp52gv1",
+          "accessControlPolicyId": "clzsplw2p0ncy0875a1271sms"
+        },
+        {
+          "id": "clzsppprw0nfx087547jo2zoe",
+          "accessControlPolicyGroupId": "clzsp9oa70n4d08756xp52gv1",
+          "accessControlPolicyId": "clzspkj8x0nc00875gyiof29j"
+        },
+        {
+          "id": "clzspq7mz0ngj0875ajrsc6a8",
+          "accessControlPolicyGroupId": "clzsp9twy0n4u08754cpp282z",
+          "accessControlPolicyId": "clzspmaqg0ndh0875fue78qor"
+        },
+        {
+          "id": "clzspq9cx0ngl0875ag9352ix",
+          "accessControlPolicyGroupId": "clzsp9twy0n4u08754cpp282z",
+          "accessControlPolicyId": "clzsplw2p0ncy0875a1271sms"
+        },
+        {
+          "id": "clzspqg4j0ngn0875el7y8oml",
+          "accessControlPolicyGroupId": "clzsp9twy0n4u08754cpp282z",
+          "accessControlPolicyId": "clzspkj8x0nc00875gyiof29j"
+        },
+        {
+          "id": "clzspqvdq0nh6087523lxfwgp",
+          "accessControlPolicyGroupId": "clzspoh140nev08759fqsduld",
+          "accessControlPolicyId": "clzspmaqg0ndh0875fue78qor"
+        },
+        {
+          "id": "clzspqx660nh80875dz6u83uo",
+          "accessControlPolicyGroupId": "clzspoh140nev08759fqsduld",
+          "accessControlPolicyId": "clzsplw2p0ncy0875a1271sms"
+        },
+        {
+          "id": "clzspqzhr0nha0875hl9x7myf",
+          "accessControlPolicyGroupId": "clzspoh140nev08759fqsduld",
+          "accessControlPolicyId": "clzspkj8x0nc00875gyiof29j"
+        },
+        {
+          "id": "clzspr2kb0nhc0875fnd46f6h",
+          "accessControlPolicyGroupId": "clzspoh140nev08759fqsduld",
+          "accessControlPolicyId": "clzspf73p0n8g0875gwjd5hb7"
+        },
+        {
+          "id": "clzsprh8x0nhu0875d9s1hruu",
+          "accessControlPolicyGroupId": "clzsp9twy0n4u08754cpp282z",
+          "accessControlPolicyId": "clzspefjr0n7v08759u206pqb"
+        },
+        {
+          "id": "clzsprmnw0nhw0875fm8ee1sk",
+          "accessControlPolicyGroupId": "clzsp9oa70n4d08756xp52gv1",
+          "accessControlPolicyId": "clzspefjr0n7v08759u206pqb"
+        },
+        {
+          "id": "clzsps2ok0nig0875h0hqeool",
+          "accessControlPolicyGroupId": "clzsprxj90nie0875dtur9m33",
+          "accessControlPolicyId": "clzsplw2p0ncy0875a1271sms"
+        },
+        {
+          "id": "clzsps68n0nii087559t6e804",
+          "accessControlPolicyGroupId": "clzsprxj90nie0875dtur9m33",
+          "accessControlPolicyId": "clzspew7r0n7y08754nzg631z"
+        }
+      ],
+      "metadata": {}
+    },
+    {
+      "api": "application",
+      "modelName": "Role",
+      "payload": [
+        {
+          "id": "applicationAdministrator",
+          "name": "Application Administrator",
+          "description": "",
+          "menu": null,
+          "homeScreenId": null
+        },
+        {
+          "id": "applicationDevelopment",
+          "name": "Application Development",
+          "description": "",
+          "menu": {
+            "icon": "laptop-code",
+            "items": [
+              {
+                "icon": "terminal",
+                "link": "/system/integration/jsonata",
+                "text": "Transformation Explorer"
+              },
+              {
+                "icon": "code",
+                "link": "/system/businessIntelligence/graphiQL",
+                "text": "API Explorer"
+              },
+              {
+                "icon": "project-diagram",
+                "link": "/system/orchestration/flowDesigner",
+                "text": "Flow Designer"
+              },
+              {
+                "icon": "chart-network",
+                "link": "/system/dataModeling/dataModelEditor",
+                "text": "Schema Designer"
+              },
+              {
+                "icon": "file-code",
+                "link": "/system/orchestration/documentDesigner",
+                "text": "Document Designer"
+              },
+              {
+                "icon": "cog",
+                "text": "Setup",
+                "type": "submenu",
+                "children": [
+                  {
+                    "link": "/system/orchestration/dataFlows",
+                    "text": "Data Flows"
+                  },
+                  {
+                    "link": "/system/dataModeling/dataModels",
+                    "text": "Data Models"
+                  },
+                  {
+                    "link": "/system/orchestration/documentDesigns",
+                    "text": "Document Designs"
+                  },
+                  {
+                    "link": "/system/integration/connections",
+                    "text": "Connections"
+                  }
+                ]
+              }
+            ],
+            "title": "Application Development"
+          },
+          "homeScreenId": null
+        }
+      ],
+      "metadata": {}
+    },
+    {
+      "api": "application",
+      "modelName": "RoleAccessControlPolicyGroup",
+      "payload": [
+        {
+          "id": "clzsptzau0nk00875a711854z",
+          "accessControlPolicyGroupId": "clzsp9twy0n4u08754cpp282z",
+          "roleId": "applicationDevelopment"
+        },
+        {
+          "id": "clzspuz070nkk0875dhjtavmt",
+          "accessControlPolicyGroupId": "clzspoh140nev08759fqsduld",
+          "roleId": "applicationAdministrator"
+        }
+      ],
+      "metadata": {}
+    }
+  ]
+}

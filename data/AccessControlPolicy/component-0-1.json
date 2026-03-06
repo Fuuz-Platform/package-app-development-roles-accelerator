@@ -1,0 +1,187 @@
+{
+  "api": "application",
+  "modelName": "AccessControlPolicy",
+  "payload": [
+    {
+      "id": "clzspefjr0n7v08759u206pqb",
+      "name": "Application API Limited Access",
+      "policy": {
+        "statements": [
+          {
+            "effect": "allow",
+            "actions": [
+              "graphql:update"
+            ],
+            "resources": [
+              "graphql:system:integration:connection",
+              "graphql:system:integration:connection:credentials",
+              "graphql:system:integration:connection:options"
+            ]
+          },
+          {
+            "effect": "allow",
+            "actions": [
+              "graphql:create",
+              "graphql:update",
+              "graphql:delete"
+            ],
+            "resources": [
+              "graphql:system:orchestration:dataFlow:*",
+              "graphql:system:orchestration:dataFlowVersion:*",
+              "graphql:system:orchestration:savedTransform:*"
+            ]
+          }
+        ]
+      },
+      "description": ""
+    },
+    {
+      "id": "clzspew7r0n7y08754nzg631z",
+      "name": "Application API Read Only Access",
+      "policy": {
+        "statements": [
+          {
+            "effect": "allow",
+            "actions": [
+              "graphql:query"
+            ],
+            "resources": [
+              "graphql:customerRelationshipManagement:*",
+              "graphql:humanCapitalManagement:*",
+              "graphql:materialsManagement:*",
+              "graphql:productDataManagement:*",
+              "graphql:productionManagement:*",
+              "graphql:supplyChainManagement:*",
+              "graphql:system:accessControl:user:*",
+              "graphql:system:businessIntelligence:*",
+              "graphql:system:configuration:*",
+              "graphql:system:dataModeling:*",
+              "graphql:system:files:*",
+              "graphql:system:images:*",
+              "graphql:system:integration:*",
+              "graphql:system:internetOfThings:*",
+              "graphql:system:orchestration:*"
+            ]
+          }
+        ]
+      },
+      "description": ""
+    },
+    {
+      "id": "clzspf73p0n8g0875gwjd5hb7",
+      "name": "Application API Full Access",
+      "policy": {
+        "statements": [
+          {
+            "effect": "allow",
+            "actions": [
+              "graphql:*"
+            ],
+            "resources": [
+              "graphql:customerRelationshipManagement:*",
+              "graphql:humanCapitalManagement:*",
+              "graphql:materialsManagement:*",
+              "graphql:productDataManagement:*",
+              "graphql:productionManagement:*",
+              "graphql:supplyChainManagement:*",
+              "graphql:system:businessIntelligence:*",
+              "graphql:system:configuration:*",
+              "graphql:system:dataModeling:*",
+              "graphql:system:files:*",
+              "graphql:system:images:*",
+              "graphql:system:integration:*",
+              "graphql:system:internetOfThings:*",
+              "graphql:system:orchestration:*"
+            ]
+          },
+          {
+            "effect": "allow",
+            "actions": [
+              "graphql:query"
+            ],
+            "resources": [
+              "graphql:system:accessControl:*"
+            ]
+          }
+        ]
+      },
+      "description": ""
+    },
+    {
+      "id": "clzspg3ts0n8y08753gwohgpi",
+      "name": "No Deployments",
+      "policy": {
+        "statements": [
+          {
+            "effect": "deny",
+            "actions": [
+              "graphql:mutate"
+            ],
+            "resources": [
+              "graphql:system:configuration:deployScreenVersion:*",
+              "graphql:system:dataModeling:deployDataModelVersion:*",
+              "graphql:system:orchestration:deployDataFlowVersion:*"
+            ],
+            "rules": []
+          }
+        ]
+      },
+      "description": ""
+    },
+    {
+      "id": "clzspkj8x0nc00875gyiof29j",
+      "name": "Execute All Flows",
+      "policy": {
+        "statements": [
+          {
+            "effect": "allow",
+            "actions": [
+              "orchestration:*"
+            ],
+            "resources": [
+              "orchestration:*"
+            ]
+          }
+        ]
+      },
+      "description": ""
+    },
+    {
+      "id": "clzsplw2p0ncy0875a1271sms",
+      "name": "Access All Screens",
+      "policy": {
+        "statements": [
+          {
+            "effect": "allow",
+            "actions": [
+              "screen:*"
+            ],
+            "resources": [
+              "screen:*"
+            ]
+          }
+        ]
+      },
+      "description": ""
+    },
+    {
+      "id": "clzspmaqg0ndh0875fue78qor",
+      "name": "Execute All Connectors",
+      "policy": {
+        "statements": [
+          {
+            "effect": "allow",
+            "actions": [
+              "integration:*"
+            ],
+            "resources": [
+              "integration:*"
+            ]
+          }
+        ]
+      },
+      "description": ""
+    }
+  ],
+  "metadata": {}
+}
