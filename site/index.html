@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>package-app-development-roles-accelerator &mdash; Fuuz Accelerator</title>
+<meta name="description" content="Fuuz accelerator: App development roles, policies, and groups for Fuuz platform developers">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://accelerators.fuuz.com/package-app-development-roles-accelerator/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://accelerators.fuuz.com/package-app-development-roles-accelerator/">
+<meta property="og:site_name" content="Fuuz Accelerators">
+<meta property="og:title" content="package-app-development-roles-accelerator &mdash; Fuuz Accelerator">
+<meta property="og:description" content="Fuuz accelerator: App development roles, policies, and groups for Fuuz platform developers">
+<link rel="icon" href="assets/appicon-violet.svg">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="prose.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareSourceCode",
+  "name": "package-app-development-roles-accelerator",
+  "url": "https://accelerators.fuuz.com/package-app-development-roles-accelerator/",
+  "description": "Fuuz accelerator: App development roles, policies, and groups for Fuuz platform developers",
+  "codeRepository": "https://github.com/Fuuz-Platform/package-app-development-roles-accelerator",
+  "applicationCategory": "BusinessApplication",
+  "runtimePlatform": "Fuuz",
+  "author": {
+    "@type": "Organization",
+    "name": "Fuuz",
+    "url": "https://fuuz.com"
+  }
+}
+</script>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <a class="logo" href="../"><img src="assets/logo-horizontal-on-midnight.svg" alt="Fuuz"></a>
+    <span class="section">Accelerators</span>
+    <nav><a href="#overview">Overview</a><a href="#package-contents">Package Contents</a><a href="#included-roles">Included Roles</a><a href="https://github.com/Fuuz-Platform/package-app-development-roles-accelerator">GitHub</a></nav>
+  </div>
+</header>
+<main>
+<div class="wrap hero">
+  <p class="eyebrow">Accelerator &middot; Fuuz package</p>
+  <h1>package-app-development-roles-accelerator<span class="accent"></span></h1>
+  <p class="lede">Fuuz accelerator: App development roles, policies, and groups for Fuuz platform developers</p>
+  <div class="ctas">
+    <a class="cta cta-primary" href="https://github.com/Fuuz-Platform/package-app-development-roles-accelerator">Get the package</a>
+    <a class="cta cta-secondary" href="../">All accelerators</a>
+  </div>
+</div>
+<section>
+  <div class="wrap prose">
+<p><strong>Version:</strong> 0.0.1
+<strong>Platform:</strong> Fuuz ≥ 2024.8.0
+<strong>Spec Version:</strong> 2.0.0</p>
+<hr />
+<h2 id="overview">Overview</h2>
+<p>This package delivers the standard Fuuz platform access control configuration for application development teams. It seeds <code>Role</code>, <code>AccessControlPolicy</code>, and <code>AccessControlPolicyGroup</code> records that define the permission boundaries for developers, administrators, and read-only users — enabling teams to onboard new environments with consistent, pre-tested role structures rather than configuring permissions from scratch.</p>
+<p>This is a data-only package (no flows, screens, or custom models). It imports directly into the Fuuz platform's built-in access control system.</p>
+<hr />
+<h2 id="package-contents">Package Contents</h2>
+<pre><code>app-development-roles/
+├── manifest.json
+├── definition.json
+├── package-data.json
+└── data/                        10 seed data files
+</code></pre>
+<hr />
+<h2 id="included-roles">Included Roles</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Role ID</th>
+<th>Name</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>applicationAdministrator</code></td>
+<td>Application Administrator</td>
+<td>Full admin access to the Fuuz platform, including deployments and configuration</td>
+</tr>
+<tr>
+<td><code>applicationDevelopment</code></td>
+<td>Application Development</td>
+<td>Development access with flow execution and screen access; restricted from deployments</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="included-access-control-policy-groups">Included Access Control Policy Groups</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Group</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>App Deployment</td>
+<td>Policies for users who need to deploy packages and publish changes</td>
+</tr>
+<tr>
+<td>App Development</td>
+<td>Policies for active developers building and testing flows and screens</td>
+</tr>
+<tr>
+<td>Read-only Access</td>
+<td>Policies for stakeholders who need visibility without write access</td>
+</tr>
+<tr>
+<td>Soft Administrator</td>
+<td>Elevated access for admins who manage users and configuration without full platform control</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="included-access-control-policies">Included Access Control Policies</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Policy</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Access All Screens</td>
+<td>Grants access to all UI screens in the platform</td>
+</tr>
+<tr>
+<td>Application API Full Access</td>
+<td>Full read/write access to the Application GraphQL API</td>
+</tr>
+<tr>
+<td>Application API Limited Access</td>
+<td>Scoped write access to the Application API (create/update, no delete)</td>
+</tr>
+<tr>
+<td>Application API Read Only Access</td>
+<td>Read-only access to all Application API queries</td>
+</tr>
+<tr>
+<td>Execute All Connectors</td>
+<td>Allows executing all registered connector flows (external integrations)</td>
+</tr>
+<tr>
+<td>Execute All Flows</td>
+<td>Allows triggering any data flow in the environment</td>
+</tr>
+<tr>
+<td>No Deployments</td>
+<td>Prevents package deployment operations; applied to development roles to separate dev from deploy</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="role-policy-group-assignments">Role → Policy Group Assignments</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Policy Group</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Application Administrator</td>
+<td>App Deployment + Soft Administrator</td>
+</tr>
+<tr>
+<td>Application Development</td>
+<td>App Development</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="installation">Installation</h2>
+<ol>
+<li>Import via Fuuz Package Manager — no pre-configuration required</li>
+<li>Seed data applies immediately on import; roles and policies are created if they do not already exist</li>
+<li>Assign roles to users via the Fuuz user management interface</li>
+</ol>
+<hr />
+<h2 id="dependencies">Dependencies</h2>
+<ul>
+<li><strong>Fuuz Platform</strong> ≥ 2024.8.0</li>
+<li>No custom data models or external dependencies</li>
+</ul>
+<hr />
+<p><em>Built on the <a href="https://fuuz.com">Fuuz Industrial Operations Platform</a></em></p>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="wrap">
+    <p>Fuuz&reg; is an Enterprise Industrial Intelligence Platform.
+      <a href="https://accelerators.fuuz.com/">All accelerators</a> &middot;
+      <a href="https://github.com/Fuuz-Platform/package-app-development-roles-accelerator">Source</a> &middot;
+      <a href="https://fuuz.com">fuuz.com</a></p>
+  </div>
+</footer>
+</body>
+</html>
